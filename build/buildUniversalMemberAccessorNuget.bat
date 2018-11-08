@@ -1,2 +1,0 @@
-msbuild /p:Configuration=Release ..\Rock.Reflection.UniversalMemberAccessor\Rock.Reflection.UniversalMemberAccessor.csproj
-nuget pack ..\Rock.Reflection.UniversalMemberAccessor\Rock.Reflection.UniversalMemberAccessor.csproj -Properties Configuration=Release

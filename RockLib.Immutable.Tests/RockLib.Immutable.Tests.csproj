@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>    
+  <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rock.Core\Immutable\RockLib.Immutable.csproj" />
+    <ProjectReference Include="..\RockLib.Immutable\RockLib.Immutable.csproj" />
   </ItemGroup>
 
   <ItemGroup>
