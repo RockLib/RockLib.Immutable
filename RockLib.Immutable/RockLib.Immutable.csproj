@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard1.6;net45;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard1.6;net45;net40;net35;</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RockLib.Threading" Version="1.0.0" />
+    <PackageReference Include="RockLib.Threading" Version="1.0.1" />
   </ItemGroup>
 
 </Project>

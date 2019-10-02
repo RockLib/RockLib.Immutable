@@ -108,7 +108,11 @@ namespace RockLib.Immutable
         /// </remarks>
         public MethodInfo GetUnlockValueMethod()
         {
+#if NETSTANDARD1_6
             return new Action(UnlockValue).GetMethodInfo();
+#else
+            return GetType().GetMethod(nameof(UnlockValue), BindingFlags.NonPublic | BindingFlags.Instance);
+#endif
         }
 
         private void UnlockValue()
