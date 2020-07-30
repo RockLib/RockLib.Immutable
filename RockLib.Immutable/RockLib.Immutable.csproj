@@ -7,12 +7,14 @@
   <PropertyGroup>
     <PackageId>RockLib.Immutable</PackageId>
     <PackageVersion>1.0.1</PackageVersion>
-    <Authors>Brian Friesen</Authors>
+    <Authors>RockLib</Authors>
     <Description>Various classes related to immutability.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
-    <Copyright>Copyright 2017 (c) Quicken Loans Corporation. All rights reserved.</Copyright>
-    <PackageTags>semimutable immutable</PackageTags>
+    <PackageProjectUrl>https://github.com/RockLib/RockLib.Immutable</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Copyright>Copyright 2017-2020 (c) Quicken Loans Corporation. All rights reserved.</Copyright>
+    <PackageTags>rocklib semimutable immutable</PackageTags>
     <Version>1.0.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
@@ -22,7 +24,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RockLib.Threading" Version="1.0.1" />
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RockLib.Threading" Version="1.0.2" />
   </ItemGroup>
 
 </Project>
