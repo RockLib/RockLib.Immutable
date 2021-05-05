@@ -10,18 +10,25 @@
     <Authors>RockLib</Authors>
     <Description>Various classes related to immutability.</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>A changelog is available at https://github.com/RockLib/RockLib.Immutable/blob/main/RockLib.Immutable/CHANGELOG.md.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/RockLib/RockLib.Immutable</PackageProjectUrl>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <PackageIcon>icon.png</PackageIcon>
-    <Copyright>Copyright 2017-2020 (c) Quicken Loans Corporation. All rights reserved.</Copyright>
+    <Copyright>Copyright 2017-2021 (c) Quicken Loans Corporation. All rights reserved.</Copyright>
     <PackageTags>rocklib semimutable immutable</PackageTags>
     <Version>1.0.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PublishRepositoryUrl>True</PublishRepositoryUrl>
+    <EmbedUntrackedSources>True</EmbedUntrackedSources>
+    <DebugType>Embedded</DebugType>
   </PropertyGroup>
 
   <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\RockLib.Immutable.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(PackageId).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +38,7 @@
 
   <ItemGroup>
     <PackageReference Include="RockLib.Threading" Version="1.0.4" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
   </ItemGroup>
 
 </Project>
