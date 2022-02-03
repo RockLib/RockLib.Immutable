@@ -97,7 +97,7 @@ namespace RockLib.Immutable.Tests
       {
          var semimutable = new Semimutable<int>(1);
 
-         var value = semimutable.Value;
+         _ = semimutable.Value;
 
          Assert.True(semimutable.IsLocked);
       }
