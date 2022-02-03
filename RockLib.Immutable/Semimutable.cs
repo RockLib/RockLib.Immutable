@@ -76,7 +76,7 @@ namespace RockLib.Immutable
       /// </summary>
       public bool IsLocked
       {
-         get { return _lockedInstance != null; }
+         get { return _lockedInstance is not null; }
       }
 
       /// <summary>
@@ -114,11 +114,11 @@ namespace RockLib.Immutable
 
       private void UnlockValue()
       {
-         if (_lockedInstance != null)
+         if (_lockedInstance is not null)
          {
             lock (_thisLock)
             {
-               if (_lockedInstance != null)
+               if (_lockedInstance is not null)
                {
                   _potentialInstance = _lockedInstance;
                   _lockedInstance = null;
@@ -139,7 +139,7 @@ namespace RockLib.Immutable
       public void SetValue(Func<T?> getValue)
       {
          // If at any time _lockedInstance has a value, exit the loop.
-         while (_lockedInstance == null)
+         while (_lockedInstance is null)
          {
             // Synchronize with the GetValue method - only one thread can have the lock at any one time.
             if (_softLock.TryAcquire())
@@ -170,7 +170,7 @@ namespace RockLib.Immutable
          Lazy<T?>? local;
 
          // If _lockedInstance has been set already, then just return its value.
-         while ((local = _lockedInstance) == null)
+         while ((local = _lockedInstance) is null)
          {
             // Synchronize with the SetValue method - only one thread can have the lock at any one time.
             if (_softLock.TryAcquire())
