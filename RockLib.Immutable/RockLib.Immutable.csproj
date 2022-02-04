@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<PackageId>RockLib.Immutable</PackageId>
-		<PackageVersion>1.0.7</PackageVersion>
+		<PackageVersion>2.0.0</PackageVersion>
 		<Authors>RockLib</Authors>
 		<Description>Various classes related to immutability.</Description>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -9,9 +9,9 @@
 		<PackageProjectUrl>https://github.com/RockLib/RockLib.Immutable</PackageProjectUrl>
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 		<PackageIcon>icon.png</PackageIcon>
-		<Copyright>Copyright 2017-2021 (c) Rocket Mortgage. All rights reserved.</Copyright>
+		<Copyright>Copyright 2017-2022 (c) Rocket Mortgage. All rights reserved.</Copyright>
 		<PackageTags>rocklib semimutable immutable</PackageTags>
-		<Version>1.0.0</Version>
+		<Version>2.0.0</Version>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PublishRepositoryUrl>True</PublishRepositoryUrl>
 		<EmbedUntrackedSources>True</EmbedUntrackedSources>
