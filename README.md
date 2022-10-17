@@ -1,6 +1,6 @@
 # RockLib.Immutable
 
-This library contains the `Semimutable` class, which represents a "semimutable" value. It's value can be set either via the setter of the <see cref="Value"/> property, or by calling the <see cref="SetValue"/> method. Once the getter of the <see cref="Value"/> property is accessed or the <see cref="LockValue"/> method is called, the value will never change again.
+This library contains the `Semimutable` class, which represents a "semimutable" value. It's value can be set via the setter of the <see cref="Value"/> property, or by calling the <see cref="SetValue"/> method. Once the getter of the <see cref="Value"/> property is accessed or the <see cref="LockValue"/> method is called, the value will never change again.
 
 It's like Schrödinger's cat - once you open the box, the cat's fate is sealed.
 
