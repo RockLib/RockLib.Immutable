@@ -1,4 +1,8 @@
-# **RockLib.Immutable Deprecation**
+# :warning: Deprecation Warning :warning:
+
+This library has been deprecated and will no longer receive updates.
+
+---
 
 RockLib has been a cornerstone of our open source efforts here at Rocket Mortgage, and it's played a significant role in our journey to drive innovation and collaboration within our organization and the open source community. It's been amazing to witness the collective creativity and hard work that you all have poured into this project.
 
@@ -6,7 +10,9 @@ However, as technology relentlessly evolves, so must we. The decision to depreca
 
 We want to express our heartfelt thanks to all the contributors and users who have been a part of this incredible journey. Your contributions, feedback, and enthusiasm have been invaluable, and we are genuinely grateful for your dedication. 🚀
 
-# RockLib.Immutable
+---
+
+## RockLib.Immutable
 
 This library contains the `Semimutable` class, which represents a "semimutable" value. It's value can be set via the setter of the <see cref="Value"/> property, or by calling the <see cref="SetValue"/> method. Once the getter of the <see cref="Value"/> property is accessed or the <see cref="LockValue"/> method is called, the value will never change again.
 
